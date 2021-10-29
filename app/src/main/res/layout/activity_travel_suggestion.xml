@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242343"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".travelSuggestion">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yatra_one"
+        android:text="Travel Suggestion"
+        android:textColor="@color/primary"
+        android:gravity="center_horizontal"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"/>
+
+</LinearLayout>

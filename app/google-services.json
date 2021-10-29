@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "277205136000",
+    "firebase_url": "https://budtrip-ad529-default-rtdb.firebaseio.com",
+    "project_id": "budtrip-ad529",
+    "storage_bucket": "budtrip-ad529.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277205136000:android:898c99e0e36ab2cad9ac65",
+        "android_client_info": {
+          "package_name": "com.example.budtrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277205136000-feanr44p63cgkaub3lq4guja079vvf7o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.budtrip",
+            "certificate_hash": "f4cdcf7d41b1357398f8925d30cb299bbea72618"
+          }
+        },
+        {
+          "client_id": "277205136000-06ta0qpeoh4bfih795d61ms9ae4bems6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV64iaWXs7QtdD0I5hI6IngmQ1nvWG9K8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277205136000-06ta0qpeoh4bfih795d61ms9ae4bems6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

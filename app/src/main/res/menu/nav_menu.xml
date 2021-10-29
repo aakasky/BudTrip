@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="General">
+        <menu>
+            <item
+                android:id="@+id/trackDisply"
+                android:icon="@drawable/ic_baseline_location_on_24"
+                android:title="Display Track" />
+            <item
+                android:id="@+id/cityWeather"
+                android:icon="@drawable/ic_baseline_cloud_24"
+                android:title="Weather" />
+            <item
+                android:id="@+id/expAssistant"
+                android:icon="@drawable/ic_baseline_monetization_on_24"
+                android:title="Expense Assistant" />
+            <item
+                android:id="@+id/suggestions"
+                android:icon="@drawable/ic_baseline_flight_24"
+                android:title="Travel Suggestions" />
+        </menu>
+    </item>
+    <item android:title="Support">
+        <menu>
+            <item
+                android:id="@+id/rating"
+                android:icon="@drawable/ic_baseline_star_half_24"
+                android:title="Rate App" />
+
+            <item
+                android:id="@+id/shareapp"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share App" />
+        </menu>
+    </item>
+    <item android:title="Logout">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_vpn_key_24"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

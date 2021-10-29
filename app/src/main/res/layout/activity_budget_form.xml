@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242343"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".budgetForm">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon"
+        android:gravity="center_horizontal"
+        android:text="Expense Assistant"
+        android:textColor="@color/primary"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <EditText
+        android:id="@+id/form_dist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/border_color"
+        android:ems="10"
+        android:fontFamily="@font/courgette"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Enter Distance in km"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/form_avg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="18.7dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/border_color"
+        android:ems="10"
+        android:fontFamily="@font/courgette"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Avg of vehicle"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/person_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="18.7dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/border_color"
+        android:ems="10"
+        android:fontFamily="@font/courgette"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="No of Person"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/noDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="18.7dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/border_color"
+        android:ems="10"
+        android:fontFamily="@font/courgette"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="No of Days"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_bike"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:fontFamily="@font/courgette"
+            android:onClick="checkButton"
+            android:padding="16dp"
+            android:text="Bike"
+            android:textAlignment="center"
+            android:textColor="@drawable/radio_text_color" />
+
+        <RadioButton
+            android:id="@+id/radio_car"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:fontFamily="@font/courgette"
+            android:onClick="checkButton"
+            android:padding="16dp"
+            android:text="Car"
+            android:textAlignment="center"
+            android:textColor="@drawable/radio_text_color" />
+
+        <RadioButton
+            android:id="@+id/radio_other"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:fontFamily="@font/courgette"
+            android:onClick="checkButton"
+            android:padding="8dp"
+            android:text="Other"
+            android:textAlignment="center"
+            android:textColor="@drawable/radio_text_color" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="18.7dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/rounded_color"
+        android:fontFamily="@font/yatra_one"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/table_border"
+        android:visibility="gone">
+
+        <!-- Table Heading -->
+
+        <TableRow android:background="@drawable/table_border">
+
+            <TextView
+                android:id="@+id/table_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/courgette"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/courgette"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Expense"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <!-- Table Data -->
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/courgette"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Petrol"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/table_petrol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/courgette"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/courgette"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="No of Stops"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/table_stop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/courgette"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/courgette"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Food"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/table_food"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/courgette"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow android:background="@drawable/table_border">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/courgette"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Total"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/table_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/courgette"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
