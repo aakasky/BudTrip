@@ -49,7 +49,7 @@ public class Login extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("277205136000-06ta0qpeoh4bfih795d61ms9ae4bems6.apps.googleusercontent.com")
+                .requestIdToken("377205136000-06ta0qpeoh4bfih795d61ms9ae4bems6.apps.googleusercontent.com")
                 .requestEmail()
                 .build();
         fAuth = FirebaseAuth.getInstance();
